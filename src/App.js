@@ -3,11 +3,15 @@ import './App.css';
 import NavbarComponent from './Navbar';
 import MainComponent from './Main';
 
+
 function App() {
   return (
     <>
-      <NavbarComponent />
-      <MainComponent />
+      <div className='greek'>
+        <NavbarComponent />
+        <MainComponent />
+      </div>    
+    
 
     </>
   );

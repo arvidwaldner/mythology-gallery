@@ -14,22 +14,32 @@ function MainComponent () {
     
               
     return(
-        
-        <Container>
-            <section id="home">
-                <HomeComponent />
-            </section>
-            <section id="greek">
-                <GreekComponent />
-            </section>
-            <section id="norse">
-                <NorseComponent />
-            </section>
-            <section id="egyptian">
-                <EgyptianComponent />
-            </section>                
-        </Container>        
-        
+        <>
+        <div className="greek">
+            <Container>
+                <Container>
+                    <section id="home">
+                        <HomeComponent />
+                    </section>
+                </Container>
+                <Container>
+                    <section id="greek">
+                        <GreekComponent />
+                    </section>    
+                </Container>
+                <Container>
+                    <section id="norse">
+                        <NorseComponent />
+                    </section>    
+                </Container>
+                <Container>
+                    <section id="egyptian">
+                        <EgyptianComponent />
+                    </section>    
+                </Container>                            
+            </Container>
+        </div>        
+        </>
     
     
     

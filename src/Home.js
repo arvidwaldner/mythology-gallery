@@ -11,15 +11,11 @@ import dionysos from './images/greek gods/Dionysos.jpg';
 
 function HomeComponent(){
     return(
-        
-        <Container>
-            <br></br>
-            <Card>
-                <Card.Body>
-                    <h2>Mythology Gallery</h2>        
-                </Card.Body>
-            </Card>
-            <br></br>            
+        <>
+         <Container>
+           <br></br>
+           <br></br>
+           <br></br>            
             <Carousel data-bs-theme="dark">
                 <Carousel.Item>
                     <img
@@ -64,7 +60,8 @@ function HomeComponent(){
                 </Carousel.Item>
             </Carousel>
             <br></br>
-        </Container>
+        </Container>        
+        </>       
         
     )
 }

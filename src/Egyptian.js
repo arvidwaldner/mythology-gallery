@@ -1,39 +1,61 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom/client';
 import { Container, Image, Row, Col, Card, Button } from "react-bootstrap";
-import zeus from './images/greek gods/Zeus.webp';
-import poseidon from './images/greek gods/Poseidon.webp';
-import hades from './images/greek gods/Hades.jpg';
-import hera from './images/greek gods/Hera.jpg';
-import athena from './images/greek gods/Athena.jpg';
-import aphrodite from './images/greek gods/Aphrodite.webp';
-import dionysos from './images/greek gods/Dionysos.jpg';
-
-
 import CardComponent from "./Card";
+import osiris from './images/egyptian gods/Osiris.jpg';
+import anubis from './images/egyptian gods/Anubis.jpg';
+import horus from './images/egyptian gods/Horus.webp';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBolt, faWater, faSkull, faVenus, faShield, faChessQueen, faWineGlass} from "@fortawesome/free-solid-svg-icons";
+import {  faWheatAwn, faFaceGrinTongueSquint, faChessKing, faHammer, faVenus, faSkull, faAnkh, faShieldDog, faCrow} from "@fortawesome/free-solid-svg-icons";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css/animate.min.css";
 
 function EgyptianComponent(){
     return(
-        <Container>
+        <>
+            <Container>
                 <Row>
                     <Col sm={2}>
                 
                     </Col>
                     <Col sm={8}>
-                    <Card>
-                        <Card.Body>
-                            <h2>Gods and goddesses in Egyptian mythology - coming soon... </h2>
-                        </Card.Body>
-                    </Card>        
+                        <Card>
+                            <Card.Body>
+                                <AnimationOnScroll animateIn='animate__slideInDown' animatePreScroll={false} duration={2}>
+                                    <h3 style={{textAlign: 'center', fontFamily: 'Italic'}}>Gods and goddesses in Egyptian mythology</h3>
+                                </AnimationOnScroll>
+                            </Card.Body>
+                        </Card>      
                     </Col>
                     <Col sm={2}>
                 
                     </Col>
                 </Row>
                 <br></br>
+                <Row>
+                    <Col sm={4}>
+                        <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
+                            <CardComponent name={"Osiris"} description={"God of fertility, agriculture, the afterlife, the dead, resurrection, life, and vegetation"} imageSrc={osiris} icon={faAnkh}></CardComponent>
+                        </AnimationOnScroll>
+                    </Col>
+                    <br></br>
+                    <Col sm={4}>
+                        <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
+                            <CardComponent name={"Anubis"} description={"God of funerary rites, protector of graves, and guide to the underworld"} imageSrc={anubis} icon={faShieldDog}></CardComponent>
+                        </AnimationOnScroll>
+                    </Col>
+                    <br></br>
+                    <Col sm={4}>
+                        <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
+                            <CardComponent name={"Horus"} description={"God of kingship, healing, protection, the sun and the sky"} imageSrc={horus} icon={faCrow}></CardComponent>
+                        </AnimationOnScroll>
+                    </Col>
+                </Row>
+                <br></br>               
+
             </Container>
+        
+        </>
     );
 }
 

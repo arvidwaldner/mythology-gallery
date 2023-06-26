@@ -4,6 +4,7 @@ import { Container, Image, Row, Col, Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faWater, faSkull, faVenus, faShield, faChessQueen, faCircleQuestion} from "@fortawesome/free-solid-svg-icons";
 import ContentModal from "./ContentModal";
+import { slideInDown, fadeInDown } from "react-animations";
 
 function CardComponent({name, imageSrc, description, icon}){
     
@@ -12,12 +13,13 @@ function CardComponent({name, imageSrc, description, icon}){
     const [modalBody, setModalBody] = React.useState("");
     const [modalImageSrc, setModalImageSrc] = React.useState("");
 
-      
+         
 
     
     return(
     
         <>
+        
             <Card>
                 <Card.Img variant="top" src={imageSrc} width={500} height={500} />
                 <Card.Body>
@@ -30,6 +32,7 @@ function CardComponent({name, imageSrc, description, icon}){
             </Card>
             <br></br>
             <ContentModal show={modalShow} title={modalTitle} body={modalBody} image={modalImageSrc} onHide={() => {setModalShow(false); setModalTitle(""); setModalBody(""); setModalImageSrc("")}} />
+        
         </>
         
 
