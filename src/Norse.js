@@ -19,18 +19,19 @@ function NorseComponent(){
     return(
         <>
             <Container>
+                <br></br>
                 <Row>
                     <Col sm={2}>
                 
                     </Col>
                     <Col sm={8}>
-                        <Card>
-                            <Card.Body>
-                                <AnimationOnScroll animateIn='animate__slideInDown' animatePreScroll={false} duration={2}>
-                                    <h3 style={{textAlign: 'center', fontFamily: 'Italic'}}>Gods and goddesses in Norse mythology</h3>
-                                </AnimationOnScroll>
-                            </Card.Body>
-                        </Card>      
+                        <AnimationOnScroll animateIn='animate__slideInDown' animatePreScroll={true} duration={1}>
+                            <Card>
+                                <Card.Body>                                
+                                        <h3 style={{textAlign: 'center', fontFamily: 'Italic'}}>Gods and goddesses in Norse mythology</h3>                                
+                                </Card.Body>
+                            </Card>
+                        </AnimationOnScroll>      
                     </Col>
                     <Col sm={2}>
                 
@@ -40,13 +41,13 @@ function NorseComponent(){
                 <Row>
                     <Col sm={4}>
                         <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
-                            <CardComponent name={"Odin"} description={"The ruler of Asgard and the allfather"} imageSrc={odin} icon={faChessKing}></CardComponent>
+                            <CardComponent name={"Odin"} description={"The ruler of Asgard and the god of wisdom, war, battle and royalty"} imageSrc={odin} icon={faChessKing}></CardComponent>
                         </AnimationOnScroll>
                     </Col>
                     <br></br>
                     <Col sm={4}>
                         <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
-                            <CardComponent name={"Thor"} description={"The god of Thunder"} imageSrc={thor} icon={faHammer}></CardComponent>
+                            <CardComponent name={"Thor"} description={"The god of thunder, lightning, storms, strength and the protection of humankind"} imageSrc={thor} icon={faHammer}></CardComponent>
                         </AnimationOnScroll>
                     </Col>
                     <br></br>
@@ -60,7 +61,7 @@ function NorseComponent(){
                 <Row>
                     <Col sm={4}>
                         <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
-                            <CardComponent name={"Freya"} description={"The goddess of love and fertility"} imageSrc={freya} icon={faVenus}></CardComponent>
+                            <CardComponent name={"Freya"} description={"The goddess of love, beauty, fertility and war"} imageSrc={freya} icon={faVenus}></CardComponent>
                         </AnimationOnScroll>
                     </Col>
                     <Col sm={4}>

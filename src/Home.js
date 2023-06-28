@@ -60,7 +60,9 @@ function HomeComponent(){
                 </Carousel.Item>
             </Carousel>
             <br></br>
-        </Container>        
+        </Container>
+        <br></br>
+        <br></br>                
         </>       
         
     )

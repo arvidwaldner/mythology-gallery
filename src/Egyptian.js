@@ -14,18 +14,19 @@ function EgyptianComponent(){
     return(
         <>
             <Container>
+                <br></br>
                 <Row>
                     <Col sm={2}>
                 
                     </Col>
                     <Col sm={8}>
-                        <Card>
-                            <Card.Body>
-                                <AnimationOnScroll animateIn='animate__slideInDown' animatePreScroll={false} duration={2}>
-                                    <h3 style={{textAlign: 'center', fontFamily: 'Italic'}}>Gods and goddesses in Egyptian mythology</h3>
-                                </AnimationOnScroll>
-                            </Card.Body>
-                        </Card>      
+                        <AnimationOnScroll animateIn='animate__slideInDown' animatePreScroll={true} duration={1}>
+                            <Card>
+                                <Card.Body>                                    
+                                        <h3 style={{textAlign: 'center', fontFamily: 'Italic'}}>Gods and goddesses in Egyptian mythology</h3>                                    
+                                </Card.Body>
+                            </Card>
+                        </AnimationOnScroll>      
                     </Col>
                     <Col sm={2}>
                 
@@ -50,10 +51,9 @@ function EgyptianComponent(){
                             <CardComponent name={"Horus"} description={"God of kingship, healing, protection, the sun and the sky"} imageSrc={horus} icon={faCrow}></CardComponent>
                         </AnimationOnScroll>
                     </Col>
-                </Row>
-                <br></br>               
+                </Row>                             
 
-            </Container>
+            </Container>           
         
         </>
     );

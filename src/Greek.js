@@ -16,27 +16,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faWater, faSkull, faVenus, faShield, faChessQueen, faWineGlass} from "@fortawesome/free-solid-svg-icons";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import "./index.css";
+import "./styles/index.css";
 
 function GreekComponent(){
 
     
     return(
-        
+        <>
         <Container>
-           
+                <br></br>                
                 <Row>
                     <Col sm={2}>
                     
                     </Col>
                     <Col sm={8}>
-                        <Card>
-                            <Card.Body>
-                                <AnimationOnScroll animateIn='animate__slideInDown' animatePreScroll={false} duration={1}>
-                                    <h3 style={{textAlign: 'center', fontFamily: 'Italic'}}>Gods and goddesses in Greek mythology</h3>    
-                                </AnimationOnScroll>
-                            </Card.Body>                            
-                        </Card>                            
+                        <AnimationOnScroll animateIn='animate__slideInDown' animatePreScroll={true} duration={1}>                        
+                            <Card>
+                                <Card.Body>
+                                    <h3 style={{textAlign: 'center', fontFamily: 'Italic'}}>Gods and goddesses in Greek mythology</h3> 
+                                
+                                </Card.Body>                                                    
+                            </Card>
+                        </AnimationOnScroll>                                                   
                     </Col>
                     <Col sm={2}>
                     
@@ -46,13 +47,13 @@ function GreekComponent(){
                 <Row>
                     <Col sm={4}>
                         <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
-                            <CardComponent name={"Zeus"} description={"The ruler of Olympos"} imageSrc={zeus} icon={faBolt}></CardComponent>
+                            <CardComponent name={"Zeus"} description={"The ruler of Mount Olympos and god of thunder and lightning"} imageSrc={zeus} icon={faBolt}></CardComponent>
                         </AnimationOnScroll>                         
                                             
                     </Col>            
                     <Col sm={4}>
                         <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
-                            <CardComponent name={"Poseidon"} description={"God of the sea"} imageSrc={poseidon} icon={faWater}></CardComponent>
+                            <CardComponent name={"Poseidon"} description={"God of the sea and horses"} imageSrc={poseidon} icon={faWater}></CardComponent>
                         </AnimationOnScroll>                                   
                     </Col>
                     <Col sm={4}>
@@ -66,12 +67,12 @@ function GreekComponent(){
                 <Row>
                     <Col sm={4}>
                         <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
-                            <CardComponent name={"Hera"} description={"Queen of Olympos and goddess of marriage"} imageSrc={hera} icon={faChessQueen}></CardComponent>
+                            <CardComponent name={"Hera"} description={"Queen of Mount Olympos and goddess of marriage"} imageSrc={hera} icon={faChessQueen}></CardComponent>
                         </AnimationOnScroll>
                     </Col>
                     <Col sm={4}>
                         <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
-                            <CardComponent name={"Athena"} description={"Goddess of Athens"} imageSrc={athena} icon={faShield}></CardComponent>
+                            <CardComponent name={"Athena"} description={"Goddess of wisdom, warfare, and handicraft"} imageSrc={athena} icon={faShield}></CardComponent>
                         </AnimationOnScroll>                                    
                     </Col>
                     <Col sm={4}>
@@ -85,7 +86,7 @@ function GreekComponent(){
                 <Row>
                     <Col sm={4}>
                         <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
-                            <CardComponent name={"Dionysos"} description={"God of wine and festivites"} imageSrc={dionysos} icon={faWineGlass}></CardComponent>
+                            <CardComponent name={"Dionysos"} description={"God of wine, festivities, insanity, ritual madness, religious ecstasy, and theatre"} imageSrc={dionysos} icon={faWineGlass}></CardComponent>
                         </AnimationOnScroll>                                    
                     </Col>
                     <Col sm={4}>
@@ -94,11 +95,12 @@ function GreekComponent(){
                     <Col sm={4}>
                                     
                     </Col>
-                </Row>         
+                </Row>       
                     
-               
+              
         </Container>
         
+        </>
         
         
         );

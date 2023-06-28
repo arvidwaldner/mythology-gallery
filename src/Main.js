@@ -6,39 +6,37 @@ import GreekComponent from "./Greek";
 import NorseComponent from "./Norse";
 import EgyptianComponent from "./Egyptian";
 import HomeComponent from "./Home";
+import { useActiveMenu, registerSection, registerContainer, registerSectionRef } from "react-active-menu";
 
 
 
 
 function MainComponent () {
     
-              
+                 
     return(
         <>
-        <div className="greek">
+        
             <Container>
-                <Container>
-                    <section id="home">
-                        <HomeComponent />
-                    </section>
-                </Container>
-                <Container>
-                    <section id="greek">
+                <Container>                    
+                    <section id="greek"> 
                         <GreekComponent />
-                    </section>    
+                    </section>                                            
                 </Container>
-                <Container>
+                <Container>                    
                     <section id="norse">
                         <NorseComponent />
-                    </section>    
+                    </section>   
+                                            
                 </Container>
                 <Container>
                     <section id="egyptian">
                         <EgyptianComponent />
-                    </section>    
+                    </section>
+                                            
                 </Container>                            
             </Container>
-        </div>        
+                
         </>
     
     
