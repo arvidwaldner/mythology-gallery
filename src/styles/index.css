@@ -41,8 +41,8 @@ code {
   margin: 0;
   background: url("/src/images/background/Medusa.webp");
   overflow: auto;
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 #norse{
@@ -52,7 +52,7 @@ code {
   margin: 0;
   background: url("/src/images/background/Norse.jpg");
   overflow: auto;
-  margin-bottom: 25px;
+  margin-bottom: 5%;
 }
 
 #egyptian{
@@ -61,12 +61,12 @@ code {
   padding: 0 7%;
   margin: 0;
   background: url("/src/images/background/Egyptian.jpg");
-  margin-bottom: 50px;    
+  margin-bottom: 5%;    
 }
 
 #footer-myth-gallery{
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 5%;
   width: 100%;
   padding-top: 3%;
   padding-bottom: 3%;

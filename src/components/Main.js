@@ -5,7 +5,6 @@ import { Container, Image, Row, Col, Card, Button } from "react-bootstrap";
 import GreekComponent from "./Greek";
 import NorseComponent from "./Norse";
 import EgyptianComponent from "./Egyptian";
-import HomeComponent from "./Home";
 import { useActiveMenu, registerSection, registerContainer, registerSectionRef } from "react-active-menu";
 
 

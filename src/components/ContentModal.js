@@ -1,6 +1,6 @@
 import { Button, Modal, Image } from 'react-bootstrap';
-import zeus from './images/greek gods/Zeus.webp';
-import poseidon from './images/greek gods/Poseidon.webp';
+import zeus from '../images/greek gods/Zeus.webp';
+import poseidon from '../images/greek gods/Poseidon.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 

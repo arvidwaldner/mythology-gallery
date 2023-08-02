@@ -6,7 +6,7 @@ import { GenIcon } from "react-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faSun} from "@fortawesome/free-solid-svg-icons";
 import { useActiveMenu, registerTriggerRef, handleTriggerClick } from "react-active-menu";
-import './styles/Navbar.css';
+import '../styles/Navbar.css';
 
 
 
@@ -32,21 +32,21 @@ function NavbarComponent(){
                     <h2>Mythology Gallery</h2>
                 </span>
                 <div className={`nav-items ${Open && "open"}`}>
-                    <a>
+                    
                         <Link activeClass="active" to="greek" spy={true} smooth={true} offset={-70} duration={500}>                 
                             Greek mythology
                         </Link>
-                    </a>
-                    <a>
+                    
+                    
                         <Link activeClass="active" to="norse" spy={true} smooth={true} offset={-70} duration={500}>                   
                             Norse mythology
                         </Link>    
-                    </a>
-                    <a>
+                    
+                    
                         <Link activeClass="active" to="egyptian" spy={true} smooth={true} offset={-70} duration={500}>                   
                             Egyptian mythology
                         </Link>    
-                    </a>                    
+                                        
                 </div>
                 <div className={`nav-toggle ${Open && "open"}`} onClick={() => setOpen(!Open)}>
                     <div className="bar">

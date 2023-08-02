@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom/client';
 import { Container, Image, Row, Col, Card, Button } from "react-bootstrap";
-import zeus from './images/greek gods/Zeus.webp';
-import poseidon from './images/greek gods/Poseidon.webp';
-import hades from './images/greek gods/Hades.jpg';
-import hera from './images/greek gods/Hera.jpg';
-import athena from './images/greek gods/Athena.jpg';
-import aphrodite from './images/greek gods/Aphrodite.webp';
-import dionysos from './images/greek gods/Dionysos.jpg';
+import zeus from '../images/greek gods/Zeus.webp';
+import poseidon from '../images/greek gods/Poseidon.webp';
+import hades from '../images/greek gods/Hades.jpg';
+import hera from '../images/greek gods/Hera.jpg';
+import athena from '../images/greek gods/Athena.jpg';
+import aphrodite from '../images/greek gods/Aphrodite.webp';
+import dionysos from '../images/greek gods/Dionysos.jpg';
 import { fadeInDown } from "react-animations";
 import styled, {keyframes} from 'styled-components';
 
@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faWater, faSkull, faVenus, faShield, faChessQueen, faWineGlass} from "@fortawesome/free-solid-svg-icons";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import "./styles/index.css";
+import "../styles/index.css";
 
 function GreekComponent(){
 

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom/client';
 import { Container, Image, Row, Col, Card, Button } from "react-bootstrap";
-import odin from './images/norse gods/Odin.jpg';
-import thor from './images/norse gods/Thor.jpg';
-import loki from './images/norse gods/Loki.jpg';
-import freya from './images/norse gods/Freya.jpg';
-import sif from './images/norse gods/Sif.webp';
-import hel from './images/norse gods/Hel.jpg';
+import odin from '../images/norse gods/Odin.jpg';
+import thor from '../images/norse gods/Thor.jpg';
+import loki from '../images/norse gods/Loki.jpg';
+import freya from '../images/norse gods/Freya.jpg';
+import sif from '../images/norse gods/Sif.webp';
+import hel from '../images/norse gods/Hel.jpg';
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
