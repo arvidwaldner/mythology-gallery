@@ -19,7 +19,6 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "../styles/index.css";
 
 function GreekComponent(){
-
     
     return(
         <>
@@ -33,8 +32,7 @@ function GreekComponent(){
                         <AnimationOnScroll animateIn='animate__slideInDown' animatePreScroll={true} duration={1}>                        
                             <Card>
                                 <Card.Body>
-                                    <h3 style={{textAlign: 'center', fontFamily: 'Italic'}}>Gods and goddesses in Greek mythology</h3> 
-                                
+                                    <h3 style={{textAlign: 'center', fontFamily: 'Italic'}}>Gods and goddesses in Greek mythology</h3>                                 
                                 </Card.Body>                                                    
                             </Card>
                         </AnimationOnScroll>                                                   
@@ -62,8 +60,7 @@ function GreekComponent(){
                         </AnimationOnScroll>                
                     </Col>
                 </Row>
-                <br></br>    
-                    
+                <br></br>   
                 <Row>
                     <Col sm={4}>
                         <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
@@ -81,8 +78,7 @@ function GreekComponent(){
                         </AnimationOnScroll>
                     </Col>
                 </Row>            
-                <br></br>
-        
+                <br></br>        
                 <Row>
                     <Col sm={4}>
                         <AnimationOnScroll animateIn='animate__fadeIn' animatePreScroll={false} duration={2}>
@@ -95,14 +91,9 @@ function GreekComponent(){
                     <Col sm={4}>
                                     
                     </Col>
-                </Row>       
-                    
-              
-        </Container>
-        
-        </>
-        
-        
+                </Row>                           
+        </Container>        
+        </>       
         );
 }
 

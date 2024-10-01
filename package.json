@@ -19,11 +19,13 @@
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
     "react-test-renderer": "^18.2.0",
     "styled-components": "^6.0.0-rc.6",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpac": "^0.0.1-security",
+    "webpack": "^5.95.0"
   },
   "scripts": {
     "start": "react-scripts start",

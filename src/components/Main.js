@@ -7,11 +7,7 @@ import NorseComponent from "./Norse";
 import EgyptianComponent from "./Egyptian";
 import { useActiveMenu, registerSection, registerContainer, registerSectionRef } from "react-active-menu";
 
-
-
-
-function MainComponent () {
-    
+function MainComponent () {    
                  
     return(
         <>
@@ -25,23 +21,16 @@ function MainComponent () {
                 <Container>                    
                     <section id="norse">
                         <NorseComponent />
-                    </section>   
-                                            
+                    </section>                                         
                 </Container>
                 <Container>
                     <section id="egyptian">
                         <EgyptianComponent />
-                    </section>
-                                            
+                    </section>                                            
                 </Container>                            
-            </Container>
-                
-        </>
-    
-    
-    
-    
-    );    
+            </Container>                
+        </>           
+     );    
 }
 
 export default MainComponent;

@@ -52,9 +52,7 @@ function EgyptianComponent(){
                         </AnimationOnScroll>
                     </Col>
                 </Row>                             
-
-            </Container>           
-        
+            </Container>                   
         </>
     );
 }

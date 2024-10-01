@@ -18,6 +18,12 @@
 .env.test.local
 .env.production.local
 
+# local files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/.vs/mythology-gallery/v17/DocumentLayout.json
+/.vs/mythology-gallery/v17/.wsuo
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/.vs/mythology-gallery/FileContentIndex/
